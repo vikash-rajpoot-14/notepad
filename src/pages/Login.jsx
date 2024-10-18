@@ -12,6 +12,7 @@ const Login = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted with:', formInput);
+    setFormInput({ name: '', email: '', password: '', contact: '' })
   }
   return (
     <Card>

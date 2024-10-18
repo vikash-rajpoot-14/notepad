@@ -4,8 +4,9 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './pages/Home';
-import Register from './components/Register';
 import { Container } from '@chakra-ui/react'
+import NavBar from './components/NavBar';
+import LandingPage from './components/LandingPage';
 
 function App() {
   return (
@@ -15,12 +16,14 @@ function App() {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        width: "100%",
-        height: "100vh"
+        maxWidth: "100%",
+        height: "100vh",
+        backgroundColor:"#c7dff6"
       }}
     >
+      <NavBar/>
       <Routes>
-        <Route path="/" element={<Register />} />
+        <Route path="/" element={<LandingPage/>} />
         <Route path="Home" element={<Home />} />
       </Routes>
     </Container>

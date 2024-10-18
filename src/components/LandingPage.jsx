@@ -1,10 +1,10 @@
 import React from 'react'
-import { Box, Container, flexbox } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 import Login from '../pages/Login'
 import SignUp from '../pages/SignUp'
 import { Tabs, Text, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 
-function Register() {
+function LandingPage() {
     return (
         <Container maxW="xl" centerContent >
             <Box
@@ -41,4 +41,4 @@ function Register() {
     )
 }
 
-export default Register
+export default LandingPage
